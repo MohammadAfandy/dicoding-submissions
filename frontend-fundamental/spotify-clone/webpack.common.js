@@ -14,8 +14,8 @@ module.exports = {
   },
   module: {
     rules: [
+      // css file with extension module.css (local)
       {
-        // css file with extension only .css (global)
         test: /\.css$/,
         use: [
           // {
@@ -40,8 +40,8 @@ module.exports = {
         ],
         include: /\.module\.css$/,
       },
+      // css file with extension only .css (global)
       {
-        // css file with extension module.css (local)
         test: /\.css$/,
         use: [
           {
